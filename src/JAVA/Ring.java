@@ -2,13 +2,12 @@ package JAVA;
 
 public class Ring {
     public static void main(String[] args) {
-        Fight fight = new Fight();
-        System.out.println(fight);
 
-        Fight fight1 = new Fight();
-        fight1.name = "Sefa";
-        fight1.age = 20;
-        System.out.println(fight1);
+
+
+
+
+
     }
 
     
@@ -16,8 +15,13 @@ public class Ring {
 
 class Fight {
 
-    public String name = "Enes";
+    public String name;
     public int age;
+
+    public Fight(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
     @Override
     public String toString() {
